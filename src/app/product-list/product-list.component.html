@@ -1,0 +1,41 @@
+<h2>Computers</h2>
+<div class="container">
+<div *ngFor="let product of products;let i=index;" class="box">
+  <a href="{{product.link}}" target="_blank">
+  <div *ngIf="product.image">
+    <img src="{{product.image}}">
+  </div>
+  <h3>
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+  </h3>
+  </a>
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <div *ngIf="product.rating" >
+    <img src="{{product.rating}}">
+  </div>
+
+
+  <div *ngIf="product.link" class="productLinkButt">
+    <button (click)="share(product.link)" class="productLink">
+      Telegram
+    </button>
+  </div>
+
+  <div class="like">
+    <button (click)="likes(product.id)" class="productLike">
+      <img src="https://p1.hiclipart.com/preview/516/463/730/facebook-reactions-1-png-clipart.jpg" style="width:20px;height:20px;">
+      {{ product.like}}
+    </button>
+  </div>
+    <div class="remove">
+      <button (click)="removeItem(i)">
+        <img src="http://www.mostshareware.com/wp-content/uploads/remove.png" style="width:20px;height:20px;">
+      </button>
+    </div>
+  </div>
+</div>

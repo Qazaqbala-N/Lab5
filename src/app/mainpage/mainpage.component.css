@@ -1,0 +1,51 @@
+
+h1{
+  text-align: center;
+  color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 30px; font-weight: bold;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+
+}
+#computer{
+  text-align: center;
+  font-family: Billabong;
+  font-weight: bold;
+  font-size: 19px;
+  border: 3px solid green;
+  width: 208px;
+  color: black;
+}
+#games{
+  text-align: center;
+  font-family: Billabong;
+  font-weight: bold;
+  font-size: 19px;
+  border: 3px solid green;
+  width: 208px;
+  color: black;
+
+}
+#books{
+  text-align: center;
+  font-family: Billabong;
+  font-weight: bold;
+  font-size: 19px;
+  border: 3px solid green;
+  width: 208px;
+  color: black;
+
+}
+#headphones{
+  text-align: center;
+  font-family: Billabong;
+  font-weight: bold;
+  font-size: 19px;
+  border: 3px solid green;
+  width: 208px;
+  color: black;
+}
+a{
+  border-radius: 6px;
+}
